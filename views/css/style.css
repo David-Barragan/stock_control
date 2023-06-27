@@ -1,3 +1,12 @@
+/* Color palette */
+:root{
+    --green: #2eca6a;
+    --blue: #4154f1;
+    --gray: #f6f9ff;
+    --titles: #012f8f;
+    --titles-light: #687fc4;
+}
+
 a{
     color: #fff !important;
     padding: 2px 20px;
