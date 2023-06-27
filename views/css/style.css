@@ -7,9 +7,121 @@
     --titles-light: #687fc4;
     --dark: #000;
     --white: #fff;
+    --orange: #ff7759;
+}
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
 a{
     color: #fff !important;
     padding: 2px 20px;
 }
+
+/* -------------------------------------------------------------------------------------------------------------------------Styles for the login #login------------------------------------------------------------------------------------------------------------------------ */
+#login-body{
+    background: #687fc4;
+}
+
+#login{
+    color:var(--dark);
+    padding: 20px;
+}
+
+#login form{
+    width: 50%;
+    display: block;
+    margin: 100px auto;
+    padding: 100px 10px;
+    background: var(--gray);
+    border-radius: 2% 10% 2% 10%;
+}
+
+
+#login form input{
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+    padding: 10px 140px;
+    font-size: 1.5rem;
+    font-weight: 480;
+    border: 2px solid var(--blue);
+    transition: .5s;
+}
+
+#login form input:hover, 
+#login form input:active,
+#login form input:focus{
+    border-color: var(--green);
+    background-color: var(--gray);
+}
+
+
+#login form p{
+    color: var(--orange);
+    text-align: center;
+    margin: 15px auto;
+    width: auto;
+    font-size: .9rem;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+#login form p:hover{
+    cursor: pointer;
+}
+
+#login form button{
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    width: auto;
+    padding: 10px 180px;
+    font-size: 1.5rem;
+    font-weight: 480;
+    border-radius: 15px;
+    transition: .5s;
+    background: var(--blue);
+    color: var(--white)
+}
+
+#login form button:hover{
+    transform: scale(.9);
+    background: #5767f5;
+}
+
+#login form a{
+    display: block ;
+    text-align: center;
+    margin: 0 auto;
+    width: 443px;
+    padding: 10px 137px;
+    font-size: 1.5rem;
+    font-weight: 480;
+    text-decoration: none;
+    background: #56a474;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+#login form a:hover{
+    transform: scale(.9);
+    background: var(--green);
+}
+
+/* rich boy image */
+.second-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-part img{
+    height: 700px;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ START OTHER SECTION-------------------------------    --------------------------------------------------------------------- */
