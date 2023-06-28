@@ -21,107 +21,179 @@ a{
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------Styles for the login #login------------------------------------------------------------------------------------------------------------------------ */
-#login-body{
-    background: #687fc4;
+#login-body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-image: linear-gradient(to right,#4154f1, #2eca6a);
+    background-repeat: no-repeat;
 }
 
-#login{
-    color:var(--dark);
-    padding: 20px;
+#login-body input {
+    background-color: #fff;
+    border-radius: 50px ;
+    padding: 12px 15px 12px 15px ;
+    width: 100%;
+    box-sizing: border-box;
+    border: none ;
+    border: 1px solid #4154f1 ;
+    font-size: 16px ;
+    color: #000;
+    font-weight: 400;
 }
 
-#login form{
+#login-body input:focus{
+    box-shadow: none;
+    border: 1px solid #687fc4;
+    outline-width: 0;
+    font-weight: 400;
+}
+
+#login-body button:focus {
+    box-shadow: none;
+    outline-width: 0;
+}
+
+#login-body .card {
+    border-radius: 0;
+    border: none;
+}
+
+/* First middle, or the best form to say is a left card */
+#login-body .card1 {
     width: 50%;
-    display: block;
-    margin: 100px auto;
-    padding: 100px 10px;
-    background: var(--gray);
-    border-radius: 2% 10% 2% 10%;
+    padding: 40px 30px 10px 30px;
 }
 
-
-#login form input{
-    text-align: center;
-    margin: 0 auto;
-    width: auto;
-    padding: 10px 140px;
-    font-size: 1.5rem;
-    font-weight: 480;
-    border: 2px solid var(--blue);
-    transition: .5s;
+/* Right card */
+#login-body .card2 {
+    width: 50%;
+    background: linear-gradient(to right, #2eca6a,#4154f1);
 }
 
-#login form input:hover, 
-#login form input:active,
-#login form input:focus{
-    border-color: var(--green);
-    background-color: var(--gray);
+#login-body #logo{
+    width: 70px;
+    height: 60px;
 }
 
-
-#login form p{
-    color: var(--orange);
-    text-align: center;
-    margin: 15px auto;
-    width: auto;
-    font-size: .9rem;
-    font-weight: 300;
-    text-decoration: underline;
+#login-body .heading{
+    margin-bottom: 60px;
+    border-bottom: 2px solid #012f8f;
 }
 
-#login form p:hover{
+#login-body ::placeholder {
+    color: #000;
+    opacity: .9;
+}
+
+#login-body :-ms-input-placeholder {
+    color: #000;
+}
+
+#login-body ::-ms-input-placeholder {
+    color: #000;
+}
+
+#login-body .form-control-label {
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+#login-body .msg-info {
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    opacity: .8;
+}
+
+#login-body .btn-color {
+    border-radius: 50px;
+    color: #fff;
+    background-image: linear-gradient(to right, #2eca6a,#4154f1);
+    padding: 15px;
     cursor: pointer;
+    border: none;
+    margin-top: 40px;
 }
 
-#login form button{
-    text-align: center;
-    display: block;
-    margin: 10px auto;
-    width: auto;
-    padding: 10px 180px;
-    font-size: 1.5rem;
-    font-weight: 480;
-    border-radius: 15px;
-    transition: .5s;
-    background: var(--blue);
-    color: var(--white)
+#login-body .btn-color:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #2eca6a,#4154f1,#2eca6a);
 }
 
-#login form button:hover{
-    transform: scale(.9);
-    background: #5767f5;
+#login-body .btn-white {
+    border-radius: 50px;
+    color: #687fc4;
+    background-color: #fff;
+    padding: 8px 40px;
+    cursor: pointer;
+    font-weight: 700;
+    border: 2px solid #012f8f;
 }
 
-#login form a{
-    display: block ;
-    text-align: center;
-    margin: 0 auto;
-    width: 443px;
-    padding: 10px 137px;
-    font-size: 1.5rem;
-    font-weight: 480;
-    text-decoration: none;
-    background: #56a474;
-    border-radius: 15px;
-    transition: .5s;
+#login-body .btn-white:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #012f8f, #8ecea6 );
 }
 
-#login form a:hover{
-    transform: scale(.9);
-    background: var(--green);
+#login-body a {
+    color: #000;
 }
 
-/* rich boy image */
-.second-part{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#login-body #create{
+    color: #687fc4 !important;
+    margin-left: 10px;
 }
 
-.second-part img{
-    height: 700px;
+#login-body a:hover {
+    color: #000;
 }
+
+#login-body .bottom {
+    width: 100%;
+    margin-top: 50px ;
+}
+
+#login-body .sm-text {
+    font-size: 15px;
+}
+
+
 
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ START OTHER SECTION-------------------------------    --------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ RESPONSIVE DESIGN-------------------------------    --------------------------------------------------------------------- */
+
+@media screen and (max-width: 992px) {
+    #login-body .card1 {
+        width: 100%;
+        padding: 40px 30px 10px 30px;
+    }
+
+    #login-body .card2 {
+        width: 100%;
+    }
+
+    #login-body .right {
+        margin-top: 100px !important;
+        margin-bottom: 100px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #login-body .container {
+        padding: 10px !important;
+    }
+
+    #login-body .card2 {
+        padding: 50px;
+    }
+
+    #login-body .right {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+}
