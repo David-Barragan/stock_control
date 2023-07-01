@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
+
+
 /* Color palette */
 :root{
     --green: #2eca6a;
@@ -15,9 +20,10 @@
     padding: 0;
 }
 
-a{
-    color: #fff !important;
-    padding: 2px 20px;
+
+body{
+    max-width: 1620px;
+    font-family: 'Judson', serif;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------- Styles for the login #login-body ------------------------------------------------------------------------------------------------------------------------ */
@@ -160,8 +166,8 @@ a{
 }
 
 
-
-/* ------------------------------------------------------------------------------------------------------------------------------------------ Styles for Home -> #home-body -----------------------------------------------    ------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ Styles for Home -> #home-body -----------------------------------------------    ------------------------------------------------------------------------------------------------------------------
+*/
 #home-body header{
     width: 100%;
     position: relative;
@@ -201,6 +207,115 @@ a{
 #home-body nav ul li:hover::after{
     width: 50%;
 }
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- Styles for Administrator's Dashbard -> #home-body -------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
+*/
+
+#admin-body{
+    overflow-y: hidden;
+}
+
+#admin-body main{
+    display: flex;
+    height: 100vh;
+    word-wrap: break-word;
+}
+
+/* Styles for the aside. */
+#admin-body aside{
+    width: 20%;
+    background: #4153f1c6;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+    position: relative;
+    z-index: 1;
+}
+
+#admin-body .container, .container-fluid, .container-lg, 
+.container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: -0.5rem;
+}
+
+#admin-body aside ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 0;
+    padding: 0 0 0 0;
+    justify-content: space-evenly;
+    font-size: 1vw;
+}
+
+#admin-body aside ul li:nth-child(2){
+    margin-top: 55vh;
+}
+
+#admin-body aside ul li:nth-child(2),
+#admin-body aside ul li:nth-child(3){
+    text-align: center;
+    width: 100%;
+    background: #687fc4;
+}
+
+#admin-body aside ul li>a>img{
+    width: 50%;
+    overflow-wrap: break-word;
+    margin: 20px auto 0 auto;
+}
+
+#admin-body aside ul li{
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#admin-body aside ul li>a{
+    padding: 30px;
+    margin: 10px auto;
+    font-weight: 650;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* -------------------------------------- */
+/* Styles for the section */
+#admin-body section{
+    padding: 30px;
+    width: 80%;
+}
+
+#admin-body section .container h1{
+    text-align: left;   
+    font-size: 2.5vw;
+    position: relative;
+    z-index: 0;
+    padding: 5px;
+    color: #687fc4;
+    letter-spacing: 2px; 
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#admin-body section .container h1::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 8px;
+    width: 30%;
+    border: 2px solid #687fc490;
+}
+
+
+
+
+
 
 
 
