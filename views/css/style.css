@@ -161,7 +161,46 @@ a{
 
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------ START OTHER SECTION-------------------------------    --------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ Styles for Home -> #home-body -----------------------------------------------    ------------------------------------------------------------------------------------------------------------------ */
+#home-body header{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#home-body nav.navbar{
+    background: linear-gradient( 50deg,#4154f1, #2eca6a);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+#home-body nav a.cerrar-sesion{
+    font-weight: 700;
+}
+
+#home-body nav ul li{
+    padding: 0;
+    margin: 0 30px;
+    position: relative;
+    z-index: 0;
+    font-weight: 700;
+}  
+
+#home-body nav ul li::after{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    border-bottom: 4px solid #fff;;
+    width: 0;
+    bottom: 4px;
+    left: 8px;
+    transition: .4s;
+}
+
+#home-body nav ul li:hover::after{
+    width: 50%;
+}
 
 
 
