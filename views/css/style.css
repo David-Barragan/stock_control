@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
+
+
 /* Color palette */
 :root{
     --green: #2eca6a;
@@ -7,14 +12,24 @@
     --titles-light: #687fc4;
     --dark: #000;
     --white: #fff;
+    --orange: #ff7759;
 }
 
-a{
-    color: #fff !important;
-    padding: 2px 20px;
+*{
+    margin: 0;
+    padding: 0;
 }
-/*-----------------------------Sign Up style------------------------*/
-#singup-body {
+
+
+body{
+    max-width: 1620px;
+    font-family: 'Judson', serif;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------- Styles for the login #login-body ------------------------------------------------------------------------------------------------------------------------ */
+
+#login-body {
+>>>>>>> main
     color: #000;
     overflow-x: hidden;
     height: 100%;
@@ -22,7 +37,8 @@ a{
     background-repeat: no-repeat;
 }
 
-#singup-body input {
+#singup-body input { 
+#login-body input {
     background-color: #fff;
     border-radius: 50px ;
     padding: 12px 15px 12px 15px ;
@@ -36,6 +52,7 @@ a{
 }
 
 #singup-body input:focus{
+#login-body input:focus{
     box-shadow: none;
     border: 1px solid #687fc4;
     outline-width: 0;
@@ -43,38 +60,42 @@ a{
 }
 
 #singup-body button:focus {
+#login-body button:focus {
     box-shadow: none;
     outline-width: 0;
 }
 
 #singup-body .card {
+#login-body .card {
     border-radius: 0;
     border: none;
 }
 
 /* First middle, or the best form to say is a left card */
 #singup-body .card1 {
+#login-body .card1 {
     width: 50%;
     padding: 40px 30px 10px 30px;
 }
 
 /* Right card */
 #singup-body .card2 {
-    width: 50%;
     background: linear-gradient(to right, #2eca6a,#4154f1);
-}
 
 #singup-body #logo{
+#login-body #logo{
     width: 70px;
     height: 60px;
 }
 
 #singup-body .heading{
+#login-body .heading{
     margin-bottom: 60px;
     border-bottom: 2px solid #012f8f;
 }
 
 #singup-body ::placeholder {
+#login-body ::placeholder {
     color: #000;
     opacity: .9;
 }
@@ -88,6 +109,15 @@ a{
 }
 
 #singup-body .form-control-label {
+#login-body :-ms-input-placeholder {
+    color: #000;
+}
+
+#login-body ::-ms-input-placeholder {
+    color: #000;
+}
+
+#login-body .form-control-label {
     font-size: 12px;
     margin-left: 15px;
 }
@@ -95,11 +125,15 @@ a{
 #singup-body .msg-info {
     padding-left: 15px;
     margin-bottom: 20px;
+#login-body .msg-info {
+    padding-left: 15px;
+    margin-bottom: 30px;
     font-size: 1.2rem;
     opacity: .8;
 }
 
 #singup-body .btn-color {
+#login-body .btn-color {
     border-radius: 50px;
     color: #fff;
     background-image: linear-gradient(to right, #2eca6a,#4154f1);
@@ -110,11 +144,16 @@ a{
 }
 
 #singup-body .btn-color:hover {
+    margin-top: 40px;
+}
+
+#login-body .btn-color:hover {
     color: #fff;
     background-image: linear-gradient(to right, #2eca6a,#4154f1,#2eca6a);
 }
 
 #singup-body .btn-white {
+#login-body .btn-white {
     border-radius: 50px;
     color: #687fc4;
     background-color: #fff;
@@ -125,6 +164,7 @@ a{
 }
 
 #singup-body .btn-white:hover {
+#login-body .btn-white:hover {
     color: #fff;
     background-image: linear-gradient(to right, #012f8f, #8ecea6 );
 }
@@ -134,6 +174,11 @@ a{
 }
 
 #singup-body #create{
+#login-body a {
+    color: #000;
+}
+
+#login-body #create{
     color: #687fc4 !important;
     margin-left: 10px;
 }
@@ -149,4 +194,216 @@ a{
 
 #singup-body.sm-text {
     font-size: 15px;
+#login-body a:hover {
+    color: #fff!important;
+}
+
+#login-body .bottom {
+    width: 100%;
+    margin-top: 50px ;
+}
+
+#login-body .sm-text {
+    font-size: 15px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ Styles for Home -> #home-body -----------------------------------------------    ------------------------------------------------------------------------------------------------------------------
+*/
+#home-body header{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#home-body nav.navbar{
+    background: linear-gradient( 50deg,#4154f1, #2eca6a);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+#home-body nav a.cerrar-sesion{
+    font-weight: 700;
+}
+
+#home-body nav ul li{
+    padding: 0;
+    margin: 0 30px;
+    position: relative;
+    z-index: 0;
+    font-weight: 700;
+}  
+
+#home-body nav ul li::after{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    border-bottom: 4px solid #fff;;
+    width: 0;
+    bottom: 4px;
+    left: 8px;
+    transition: .4s;
+}
+
+#home-body nav ul li:hover::after{
+    width: 50%;
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- Styles for Administrator's Dashbard -> #home-body -------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
+*/
+
+#admin-body{
+    overflow-y: hidden;
+}
+
+#admin-body main{
+    display: flex;
+    height: 100vh;
+    word-wrap: break-word;
+}
+
+/* Styles for the aside. */
+#admin-body aside{
+    width: 20%;
+    background: #4153f1c6;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+    position: relative;
+    z-index: 1;
+}
+
+#admin-body .container, .container-fluid, .container-lg, 
+.container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: -0.5rem;
+}
+
+#admin-body aside ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 0;
+    padding: 0 0 0 0;
+    justify-content: space-evenly;
+    font-size: 1vw;
+}
+
+#admin-body aside ul li:nth-child(2){
+    margin-top: 55vh;
+}
+
+#admin-body aside ul li:nth-child(2),
+#admin-body aside ul li:nth-child(3){
+    text-align: center;
+    width: 100%;
+    background: #687fc4;
+}
+
+#admin-body aside ul li>a>img{
+    width: 50%;
+    overflow-wrap: break-word;
+    margin: 20px auto 0 auto;
+}
+
+#admin-body aside ul li{
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#admin-body aside ul li>a{
+    padding: 30px;
+    margin: 10px auto;
+    font-weight: 650;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* -------------------------------------- */
+/* Styles for the section */
+#admin-body section{
+    padding: 30px;
+    width: 80%;
+}
+
+#admin-body section .container h1{
+    text-align: left;   
+    font-size: 2.5vw;
+    position: relative;
+    z-index: 0;
+    padding: 5px;
+    color: #687fc4;
+    letter-spacing: 2px; 
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#admin-body section .container h1::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 8px;
+    width: 30%;
+    border: 2px solid #687fc490;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- RESPONSIVE DESIGN-------------------------------    --------------------------------------------------------------------- */
+
+@media screen and (max-width: 992px) {
+
+    #login-body .card1 {
+        width: 100%;
+        padding: 40px 30px 10px 30px;
+    }
+
+    #login-body .card2 {
+        width: 100%;
+    }
+
+    #login-body .right {
+        margin-top: 100px !important;
+        margin-bottom: 100px !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #login-body .container {
+        padding: 10px !important;
+    }
+
+    #login-body .card2 {
+        padding: 50px;
+    }
+
+    #login-body .right {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+
 }
