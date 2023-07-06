@@ -402,8 +402,10 @@ body{
     }
 
     #login-body .right {
-        margin-top: 50px !important;
+        margin-top: 50px;
         margin-bottom: 50px !important;
     }
-
 }
+
+
+
