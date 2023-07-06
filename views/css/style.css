@@ -29,7 +29,6 @@ body{
 /* ------------------------------------------------------------------------------------------------------------------------- Styles for the login #login-body ------------------------------------------------------------------------------------------------------------------------ */
 
 #login-body {
->>>>>>> main
     color: #000;
     overflow-x: hidden;
     height: 100%;
@@ -37,7 +36,7 @@ body{
     background-repeat: no-repeat;
 }
 
-#singup-body input { 
+
 #login-body input {
     background-color: #fff;
     border-radius: 50px ;
@@ -51,7 +50,7 @@ body{
     font-weight: 400;
 }
 
-#singup-body input:focus{
+
 #login-body input:focus{
     box-shadow: none;
     border: 1px solid #687fc4;
@@ -59,58 +58,29 @@ body{
     font-weight: 400;
 }
 
-#singup-body button:focus {
+
 #login-body button:focus {
     box-shadow: none;
     outline-width: 0;
 }
 
-#singup-body .card {
+
 #login-body .card {
     border-radius: 0;
     border: none;
 }
 
 /* First middle, or the best form to say is a left card */
-#singup-body .card1 {
+
 #login-body .card1 {
     width: 50%;
     padding: 40px 30px 10px 30px;
 }
 
 /* Right card */
-#singup-body .card2 {
-    background: linear-gradient(to right, #2eca6a,#4154f1);
-
-#singup-body #logo{
 #login-body #logo{
     width: 70px;
     height: 60px;
-}
-
-#singup-body .heading{
-#login-body .heading{
-    margin-bottom: 60px;
-    border-bottom: 2px solid #012f8f;
-}
-
-#singup-body ::placeholder {
-#login-body ::placeholder {
-    color: #000;
-    opacity: .9;
-}
-
-#singup-body :-ms-input-placeholder {
-    color: #000;
-}
-
-#singup-body ::-ms-input-placeholder {
-    color: #000;
-}
-
-#singup-body .form-control-label {
-#login-body :-ms-input-placeholder {
-    color: #000;
 }
 
 #login-body ::-ms-input-placeholder {
@@ -122,9 +92,6 @@ body{
     margin-left: 15px;
 }
 
-#singup-body .msg-info {
-    padding-left: 15px;
-    margin-bottom: 20px;
 #login-body .msg-info {
     padding-left: 15px;
     margin-bottom: 30px;
@@ -132,7 +99,7 @@ body{
     opacity: .8;
 }
 
-#singup-body .btn-color {
+
 #login-body .btn-color {
     border-radius: 50px;
     color: #fff;
@@ -152,7 +119,6 @@ body{
     background-image: linear-gradient(to right, #2eca6a,#4154f1,#2eca6a);
 }
 
-#singup-body .btn-white {
 #login-body .btn-white {
     border-radius: 50px;
     color: #687fc4;
@@ -163,7 +129,6 @@ body{
     border: 2px solid #012f8f;
 }
 
-#singup-body .btn-white:hover {
 #login-body .btn-white:hover {
     color: #fff;
     background-image: linear-gradient(to right, #012f8f, #8ecea6 );
@@ -173,7 +138,6 @@ body{
     color: #fff;
 }
 
-#singup-body #create{
 #login-body a {
     color: #000;
 }
@@ -192,8 +156,6 @@ body{
     margin-top: -42px;
 }
 
-#singup-body.sm-text {
-    font-size: 15px;
 #login-body a:hover {
     color: #fff!important;
 }
@@ -406,6 +368,3 @@ body{
         margin-bottom: 50px !important;
     }
 }
-
-
-
