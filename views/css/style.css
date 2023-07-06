@@ -13,3 +13,140 @@ a{
     color: #fff !important;
     padding: 2px 20px;
 }
+/*-----------------------------Sign Up style------------------------*/
+#singup-body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-image: linear-gradient(to right,#4154f1, #2eca6a);
+    background-repeat: no-repeat;
+}
+
+#singup-body input {
+    background-color: #fff;
+    border-radius: 50px ;
+    padding: 12px 15px 12px 15px ;
+    width: 100%;
+    box-sizing: border-box;
+    border: none ;
+    border: 1px solid #4154f1 ;
+    font-size: 16px ;
+    color: #000;
+    font-weight: 400;
+}
+
+#singup-body input:focus{
+    box-shadow: none;
+    border: 1px solid #687fc4;
+    outline-width: 0;
+    font-weight: 400;
+}
+
+#singup-body button:focus {
+    box-shadow: none;
+    outline-width: 0;
+}
+
+#singup-body .card {
+    border-radius: 0;
+    border: none;
+}
+
+/* First middle, or the best form to say is a left card */
+#singup-body .card1 {
+    width: 50%;
+    padding: 40px 30px 10px 30px;
+}
+
+/* Right card */
+#singup-body .card2 {
+    width: 50%;
+    background: linear-gradient(to right, #2eca6a,#4154f1);
+}
+
+#singup-body #logo{
+    width: 70px;
+    height: 60px;
+}
+
+#singup-body .heading{
+    margin-bottom: 60px;
+    border-bottom: 2px solid #012f8f;
+}
+
+#singup-body ::placeholder {
+    color: #000;
+    opacity: .9;
+}
+
+#singup-body :-ms-input-placeholder {
+    color: #000;
+}
+
+#singup-body ::-ms-input-placeholder {
+    color: #000;
+}
+
+#singup-body .form-control-label {
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+#singup-body .msg-info {
+    padding-left: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    opacity: .8;
+}
+
+#singup-body .btn-color {
+    border-radius: 50px;
+    color: #fff;
+    background-image: linear-gradient(to right, #2eca6a,#4154f1);
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+#singup-body .btn-color:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #2eca6a,#4154f1,#2eca6a);
+}
+
+#singup-body .btn-white {
+    border-radius: 50px;
+    color: #687fc4;
+    background-color: #fff;
+    padding: 8px 40px;
+    cursor: pointer;
+    font-weight: 700;
+    border: 2px solid #012f8f;
+}
+
+#singup-body .btn-white:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #012f8f, #8ecea6 );
+}
+
+#singup-body a {
+    color: #fff;
+}
+
+#singup-body #create{
+    color: #687fc4 !important;
+    margin-left: 10px;
+}
+
+#singup-body a:hover {
+    color: #fff!important;
+}
+
+#singup-body .bottom {
+    width: 100%;
+    margin-top: -42px;
+}
+
+#singup-body.sm-text {
+    font-size: 15px;
+}
