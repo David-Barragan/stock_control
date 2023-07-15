@@ -29,7 +29,7 @@
             
                                     <h4 class="msg-info">Please login to your account</h4>
 
-                                    <form action="#">
+                                    <form action="../controllers/login.php" method="post">
                                         <div class="form-group">
                                             <!-- form-control-label isn't a bootstrap class -->
                                             <label class="form-control-label text-muted">Username</label>
